@@ -1,2 +1,3 @@
-# CAP_Assignment1
-Basic HTML + CSS
+# CAP_Assignment
+CAP_Assignment 1 : Basic HTML + CSS
+
