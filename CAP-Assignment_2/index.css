@@ -1,0 +1,89 @@
+.navt {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.bg-image {
+  background-image: url(sky2.jpg);
+  -webkit-backface-visibility: 80%;
+  height: 75vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 100px;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 100;
+  color: white;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.input-box {
+  width: 40%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+.city {
+  cursor: pointer;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  overflow: hidden;
+}
+
+.city:hover {
+  transform: scale(1.1);
+  border-radius: 1em;
+}
+
+.city img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s all;
+  -webkit-transition: 0.2s all;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s all;
+  -webkit-transition: 0.2s all;
+}
+
+.imgplace {
+  position: relative;
+  margin: 1rem;
+}
+.city img:hover {
+  transform: scale(1.6);
+  filter: brightness(80%);
+}
+.city-text {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  bottom: 2.5rem;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#activity {
+  margin-right: 2rem;
+}
