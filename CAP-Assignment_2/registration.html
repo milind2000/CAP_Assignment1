@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register for Journey</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h3
+      class="text-white text-center font-weight-bold bg-info"
+      style="font-size: 40px"
+    >
+      Registration Form
+    </h3>
+
+    <div class="container bg-light">
+      <br /><br />
+      <div class="col-lg-6 d-block m-auto">
+        <form
+          name="registration"
+          class="bg-light registration-form"
+          onsubmit="return formValidation()"
+        >
+          <div class="form-group">
+            <label for="user" class="font-weight-bold"> Name: </label>
+            <input type="text" name="user" class="form-control" id="user" />
+            <span id="username" class="font-weight-bold" style="color: red">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold"> Email ID: </label>
+            <input type="text" name="email" class="form-control" id="email" />
+            <span id="emailid" class="font-weight-bold" style="color: red">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold"> Mobile Number: </label>
+            <input type="text" name="mobile" class="form-control" id="mobile" />
+            <span id="mobilenum" class="font-weight-bold" style="color: red">
+            </span>
+          </div>
+
+          <label class="font-weight-bold">Gender: </label>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="optradio"
+                id="male"
+              />Male
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="optradio"
+                id="female"
+              />Female
+            </label>
+          </div>
+          <div class="form-check-inline disabled">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="optradio"
+                id="other"
+              />Other
+            </label>
+            <span id="gender" class="font-weight-bold" style="color: red">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold"> Pincode: </label>
+            <input type="text" name="pin" class="form-control" id="pin" />
+            <span id="pincode" class="font-weight-bold" style="color: red">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold">Date of Journey</label>
+            <input
+              class="form-control"
+              id="date"
+              name="date"
+              placeholder="DD/MM/YYYY"
+              type="date"
+            />
+            <span
+              id="dateof"
+              class="font-weight-bold"
+              style="color: red"
+            ></span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-bold">Anything specific:</label>
+            <textarea class="form-control" rows="5" id="about"></textarea>
+          </div>
+
+          <input
+            type="submit"
+            name="submit"
+            value="Register yourself.."
+            class="btn btn-success"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="registration.js"></script>
+  </body>
+</html>
